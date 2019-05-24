@@ -14,10 +14,14 @@
     "description": "模拟一个带参数的post请求",
     "request": {
       "uri": "/postwithparam",
-      "method": "post"
+      "method": "post",
+      "forms": {
+        "name": "huhansan",
+        "sex": "man"
+      }
     },
     "response": {
-      "text": "这是我的第一个mock的post请求"
+      "text": "我胡汉三带着参数回来了"
     }
   }
 
