@@ -15,7 +15,7 @@ public class TestMethodDemo {
     }
     @Test
     public void test3() {
-        Assert.assertEquals("aaa", "aaa");
+        Assert.assertEquals("aaa", "aa");
     }
     @Test
     public void logDemo(){

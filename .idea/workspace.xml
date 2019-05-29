@@ -325,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/IdeaProjects/AutoTest/Chapter6/src/main/resources/testng.xml">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Chapter10" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Application" />
@@ -394,8 +394,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/IdeaProjects/AutoTest/Chapter6/src/main/resources/testng.xml" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="TestNG.D:/IdeaProjects/AutoTest/Chapter6/src/main/resources/testng.xml" />
         <item itemvalue="Spring Boot.HelloController" />
         <item itemvalue="TestNG.MyCookiesForPost.testPostMethod" />
         <item itemvalue="TestNG.MyCookiesForGet.testGetWithCookies" />

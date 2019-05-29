@@ -8,11 +8,16 @@
     <artifactId>Chapter5</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+        <!--<dependency>-->
+            <!--<groupId>org.testng</groupId>-->
+            <!--<artifactId>testng</artifactId>-->
+            <!--<version>7.0.0-beta4</version>-->
+            <!--<scope>compile</scope>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.0.0-beta4</version>
-            <scope>compile</scope>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 
