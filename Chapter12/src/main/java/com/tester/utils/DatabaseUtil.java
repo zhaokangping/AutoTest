@@ -16,9 +16,9 @@ public class DatabaseUtil {
 //         得到SqlSessionFactory,使用类加载器加载xml文件
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader);
 //         得到sqlSession对象,这个对象就能执行配置文件中的sql语句
-        SqlSession sqlSession = factory.openSession();
+        SqlSession session = factory.openSession();
 
-        return  sqlSession;
+        return  session;
 
     }
 }

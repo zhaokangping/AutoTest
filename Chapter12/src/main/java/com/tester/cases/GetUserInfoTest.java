@@ -30,7 +30,7 @@ public class GetUserInfoTest {
 
         JSONArray resultJson = getJsonResult(getUserInfoCase);
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
         System.out.println("自己查库获取用户信息:"+user.toString());
@@ -40,7 +40,8 @@ public class GetUserInfoTest {
         JSONArray jsonArray = new JSONArray(userList);
         System.out.println("获取用户信息:"+jsonArray.toString());
         System.out.println("调用接口获取用户信息:"+resultJson.toString());
-        Assert.assertEquals(jsonArray,resultJson);
+        JSONArray jsonArray1 = new JSONArray(resultJson.getString(0));
+        Assert.assertEquals(jsonArray.toString(),jsonArray1.toString());
 
     }
         private JSONArray getJsonResult(GetUserInfoCase getUserInfoCase) throws IOException {
@@ -66,8 +67,6 @@ public class GetUserInfoTest {
             JSONArray array = new JSONArray(resultList);
             System.out.println(array.toString());
             return array;
-
-
 
     }
 }

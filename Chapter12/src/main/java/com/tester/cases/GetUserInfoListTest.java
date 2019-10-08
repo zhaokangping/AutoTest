@@ -30,7 +30,7 @@ public class GetUserInfoListTest {
 
         JSONArray resultJson = getJsonResult(getUserListCase);
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);
         for (User u : userList){
             System.out.println("list获取的user:"+u.toString());

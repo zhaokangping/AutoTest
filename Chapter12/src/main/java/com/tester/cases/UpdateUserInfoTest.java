@@ -27,7 +27,7 @@ public class UpdateUserInfoTest {
 
         int result = getResult(updateUserInfoCase);
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         System.out.println(user.toString());
 
@@ -47,7 +47,7 @@ public class UpdateUserInfoTest {
         int result = getResult(updateUserInfoCase);
 
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         System.out.println(user.toString());
 

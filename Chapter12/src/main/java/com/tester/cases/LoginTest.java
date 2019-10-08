@@ -29,7 +29,6 @@ public class LoginTest {
         TestConfig.addUserUrl = ConfigFile.getUrl(InterfaceName.ADDUSERINFO);
         TestConfig.updateUserInfoUrl = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
 
-
     }
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
@@ -41,7 +40,8 @@ public class LoginTest {
 
 //            下面代码为写完接口的测试代码
         String result = getResult(loginCase);
-        Assert.assertEquals(loginCase.getExpected(),result);
+        String expecte = loginCase.getExpected();
+        Assert.assertEquals(expecte,result);
 
     }
 
@@ -66,7 +66,7 @@ public class LoginTest {
         param.put("userName",loginCase.getUserName());
         param.put("password",loginCase.getPassword());
 
-        post.setHeader("content-type","application/json");
+        post.setHeader("Content-Type","application/json");
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
 

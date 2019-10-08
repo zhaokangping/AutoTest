@@ -5,7 +5,7 @@ import com.tester.model.InterfaceName;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class ConfigFile {
+public class  ConfigFile {
 
     private static ResourceBundle bundle = ResourceBundle.getBundle("application", Locale.CHINA);
 

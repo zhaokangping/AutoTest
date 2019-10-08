@@ -48,7 +48,7 @@
 
     <!-- 获取用户列表-->
     <select id="getUserList" parameterType="com.tester.model.GetUserListCase" resultType="com.tester.model.User">
-        select * from USER
+        select * from user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != userName and '' != userName">
                 AND userName=#{userName}

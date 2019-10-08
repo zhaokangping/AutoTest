@@ -24,10 +24,11 @@ public class AddUserTest {
         AddUserCase addUserCase = session.selectOne("addUserCase",1);
         System.out.println(addUserCase.toString());
         System.out.println(TestConfig.addUserUrl);
-
+//      发请求,获取返回结果
         String result = getResult(addUserCase);
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
+//        验证返回结果
         User user = session.selectOne("addUser",addUserCase);
         System.out.println(user.toString());
 
@@ -61,8 +62,6 @@ public class AddUserTest {
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
         return result;
-
-
     }
 
 
